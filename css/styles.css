@@ -1,0 +1,57 @@
+.clockface {
+    text-align: center;
+    font-size: 50px;
+}
+  
+.actions {
+    text-align: center;
+}
+  
+.timer-btn {
+    display: inline-flex;
+    margin-left: 4px;
+    margin-right: 4px;
+    text-transform: uppercase;
+    border: 0;
+    color: rgb(248, 248, 241);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 3px;
+    background-color: rgb(87, 185, 185);
+}
+
+.active {
+    background-color: #2196f3;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    margin: 0;
+    background-color: #fff;
+    color: #2a2a2a;
+    border: 1px solid #2a2a2a;
+    border-radius: 3px;
+    padding: 24px;
+    user-select: none;
+    cursor: pointer;
+
+    transform: translateX(calc(100% + 20px));
+    visibility: hidden;
+    opacity: 0;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.notification.sucess {
+    border: 1px solid #388e3c;
+    background-color: #4caf50;
+    color: antiquewhite;
+}
+
+.notification.is-visibile {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+}
